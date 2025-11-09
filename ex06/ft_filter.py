@@ -14,6 +14,7 @@ def is_even(n):
     """Retourne True si le nombre est pair"""
     return n % 2 == 0
 
+
 def is_positive(n):
     """Retourne True si le nombre est positif"""
     return n > 0
@@ -48,6 +49,7 @@ def main():
     print("Test 4 : comparaison automatique")
     print(list(filter(is_even, numbers)) == list(ft_filter(is_even, numbers)))
     print(list(filter(None, data)) == list(ft_filter(None, data)))
+
 
 if __name__ == "__main__":
     main()

@@ -1,5 +1,6 @@
 import sys
 
+
 def building(str):
     punctuations = '.,;:!?\'"()-[]{}<>@$#%^&*_+=\\|~`'
     upper = 0
@@ -29,22 +30,22 @@ def building(str):
     print(space, " spaces")
     print(digit, " digits")
 
+
 def main():
     # lecture des arguments
     # vérification du nombre d'arguments
     # si aucun argument -> demander à l'utilisateur
-    # traitement de la chaîne : compter majuscules, minuscules, chiffres, ponctuation, espaces
+    # traitement de la chaîne
     # affichage des résultats
     if len(sys.argv) > 2:
-        print ("AssertionError: more than one atgument is provided")
+        print("AssertionError: more than one atgument is provided")
         exit()
     if len(sys.argv) < 2:
-            str = input("what is the text to count")
+        str = input("what is the text to count")
     else:
         str = sys.argv[1]
     building(str)
 
+
 if __name__ == "__main__":
     main()
-
-    

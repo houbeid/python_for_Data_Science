@@ -30,6 +30,11 @@ def building(str):
     print(digit, " digits")
 
 def main():
+    # lecture des arguments
+    # vérification du nombre d'arguments
+    # si aucun argument -> demander à l'utilisateur
+    # traitement de la chaîne : compter majuscules, minuscules, chiffres, ponctuation, espaces
+    # affichage des résultats
     if len(sys.argv) > 2:
         print ("AssertionError: more than one atgument is provided")
         exit()

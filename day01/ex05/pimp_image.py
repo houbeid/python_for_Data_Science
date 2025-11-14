@@ -15,6 +15,10 @@ def ft_red(array: np.ndarray) -> np.ndarray:
     Uses '*' as required.
     """
     red = array * [1, 0, 0]
+    print("Red Filter array:")
+    print("The shape of image is", red.shape)
+    print(red)
+    print("-" * 50)
     return red
 
 
@@ -26,6 +30,10 @@ def ft_green(array: np.ndarray) -> np.ndarray:
     green = array.copy()
     green[:, :, 0] = green[:, :, 0] - green[:, :, 0]  # R = 0
     green[:, :, 2] = green[:, :, 2] - green[:, :, 2]  # B = 0
+    print("green Filter array:")
+    print("The shape of image is", green.shape)
+    print(green)
+    print("-" * 50)
     return green
 
 
@@ -37,6 +45,10 @@ def ft_blue(array: np.ndarray) -> np.ndarray:
     """
     blue = np.zeros_like(array)
     blue[:, :, 2] = array[:, :, 2]
+    print("blue Filter array:")
+    print("The shape of image is", blue.shape)
+    print(blue)
+    print("-" * 50)
     return blue
 
 

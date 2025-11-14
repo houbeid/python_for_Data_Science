@@ -19,13 +19,6 @@ filters = {
     "Blue Filter": ft_blue(array),
     "Grey Filter": ft_grey(array)
 }
-
-for name, arr in filters.items():
-    print(f"{name} array:")
-    print(arr)
-    print("Shape:", arr.shape)
-    print("-" * 50)
-
 # Affichage des images (optionnel pour visualiser)
 plt.figure(figsize=(15, 6))
 plt.subplot(2, 3, 1)

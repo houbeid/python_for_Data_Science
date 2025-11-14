@@ -14,6 +14,5 @@ def projection_life(path_expectancy: str, path_adjusted: str):
     plt.title("1900")
     plt.xlabel("Gross domestic product")
     plt.ylabel("Life expectancy")
-    plt.legend()
     plt.tight_layout()
     plt.show()

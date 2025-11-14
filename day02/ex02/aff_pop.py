@@ -1,5 +1,7 @@
 from load_csv import load
 import matplotlib.pyplot as plt
+import pandas as pd
+
 
 def str_to_int(value):
     if isinstance(value, str):
@@ -15,11 +17,10 @@ def str_to_int(value):
     else:
         return float(value)
 
-def aff_pop(path: str) :
+
+def aff_pop(path: str):
     df = load(path)
-    # convertir les colonnes "années" en int
-    years = [str(y) for y in range(1800, 2051)]  # 2051 car upper bound non inclus
-   # years = [int(col) for col in years]
+    years = [str(y) for y in range(1800, 2051)]
     country_campus = df[df["country"] == "Morocco"][years]
     country_other = df[df["country"] == "France"][years]
     country_campus = country_campus.applymap(str_to_int)

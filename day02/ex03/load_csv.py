@@ -8,8 +8,9 @@ def load(path: str) -> pd.array:
     """
     try:
         df = pd.read_csv(path)
-        print ("Loading dataset of dimensions ", df.shape)
+        print("Loading dataset of dimensions ", df.shape)
         return df
-    except (FileNotFoundError, pd.errors.EmptyDataError, pd.errors.ParserError):
+    except (FileNotFoundError, pd.errors.EmptyDataError,
+            pd.errors.ParserError):
         print("Erreur : chemin ou format du fichier invalide.")
-        return 
+        return

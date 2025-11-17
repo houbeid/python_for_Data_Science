@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class Character(ABC):
     """
     Classe abstraite représentant un personnage.

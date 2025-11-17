@@ -1,11 +1,10 @@
 from S1E9 import Character
 
+
 class Baratheon(Character):
     """
     Représente la famille Baratheon.
     """
-
-
     def __init__(self, first_name, is_alive=True, eyes="brown", hairs="dark"):
         super().__init__(first_name, is_alive)
         self.family_name = "Baratheon"

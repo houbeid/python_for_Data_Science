@@ -14,10 +14,20 @@ class Baratheon(Character):
         self.hairs = hairs
 
     def __str__(self):
-        return f"{self.first_name} | Yeux: {self.eyes}, Cheveux: {self.hairs}, Vivant: {self.is_alive}"
+        return (
+                f"{self.first_name} | "
+                f"Yeux: {self.eyes}, "
+                f"Cheveux: {self.hairs}, "
+                f"Vivant: {self.is_alive}"
+                )
 
     def __repr__(self):
-        return f"Baratheon(first_name='{self.first_name}', is_alive={self.is_alive}, eyes='{self.eyes}', hairs='{self.hairs}')"
+        return (
+                f"Baratheon(first_name='{self.first_name}', "
+                f"is_alive={self.is_alive}, "
+                f"eyes='{self.eyes}', "
+                f"hairs='{self.hairs}')"
+                )
 
 
 class Lannister(Character):
@@ -33,10 +43,20 @@ class Lannister(Character):
         self.hairs = hairs
 
     def __str__(self):
-        return f"{self.first_name} | Yeux: {self.eyes}, Cheveux: {self.hairs}, Vivant: {self.is_alive}"
+        return (
+                f"{self.first_name} | "
+                f"Yeux: {self.eyes}, "
+                f"Cheveux: {self.hairs}, "
+                f"Vivant: {self.is_alive}"
+                )
 
     def __repr__(self):
-        return f"Lannister(first_name='{self.first_name}', is_alive={self.is_alive}, eyes='{self.eyes}', hairs='{self.hairs}')"
+        return (
+                f"Lannister(first_name='{self.first_name}', "
+                f"is_alive={self.is_alive}, "
+                f"eyes='{self.eyes}', "
+                f"hairs='{self.hairs}')"
+                )
 
     @classmethod
     def create_lannister(cls, first_name, is_alive=True):
